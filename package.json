@@ -1,0 +1,31 @@
+{
+  "name": "youtube-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "cleanup": "node src/utils/cleanup.js public .cache",
+    "dev": "npm run cleanup && parcel src/index.html -d public",
+    "build": "npm run cleanup && parcel build src/index.html -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniyelMe/youtube-search.git"
+  },
+  "author": "Daniyel Menda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaniyelMe/youtube-search/issues"
+  },
+  "homepage": "https://github.com/DaniyelMe/youtube-search#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "less": "^3.12.2",
+    "parcel-bundler": "^1.12.4"
+  }
+}
